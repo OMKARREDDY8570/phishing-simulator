@@ -45,7 +45,7 @@ To run this project on your local machine, follow these steps:
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/your-username/phishing-simulator.git
+   git clone https://github.com/OMKARREDDY8570/phishing-simulator.git
    cd phishing-simulator
    ```
 
