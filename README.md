@@ -1,73 +1,78 @@
-# React + TypeScript + Vite
+# 🛡️ Phishing Mirror Awareness Lab
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Available-success.svg?style=for-the-badge&logo=render)](https://phishing-simulator-hw4o.onrender.com/)
+[![React](https://img.shields.io/badge/React-19.2-blue.svg?style=for-the-badge&logo=react)](https://reactjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.x-blue.svg?style=for-the-badge&logo=typescript)](https://www.typescriptlang.org/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind-4.2-38B2AC.svg?style=for-the-badge&logo=tailwind-css)](https://tailwindcss.com/)
 
-Currently, two official plugins are available:
+**Live Project Output:** [https://phishing-simulator-hw4o.onrender.com/](https://phishing-simulator-hw4o.onrender.com/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 📖 Overview
 
-## React Compiler
+The **Phishing Mirror Awareness Lab** is an interactive, educational cybersecurity tool designed to demonstrate the mechanics of modern phishing attacks. 
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+By providing a safe, client-side simulation, this project allows users to experience a phishing attack from both perspectives simultaneously:
+- **The Victim View**: Deceptive, realistic login interfaces mimicking popular social media, email, and finance portals.
+- **The Attacker Dashboard**: A real-time data feed capturing every focus, blur, click, and keystroke event happening on the victim's side.
 
-## Expanding the ESLint configuration
+After interacting with the mock portals, the application triggers a **Security Breakdown Overlay**, detailing exactly how the attack worked and providing actionable tips to identify real phishing attempts in the wild.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+> **⚠️ IMPORTANT DISCLAIMER:** 
+> This project is strictly built for educational and awareness purposes. It is a 100% client-side React application. **No user input, keystrokes, or credentials are ever transmitted over the internet, saved to a database, or collected in any form.** Please do not enter real passwords into this simulation.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## ✨ Features
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+- 🕵️ **Split-Screen Mechanics**: Side-by-side visualization of the victim's screen and the attacker's terminal.
+- ⚡ **Real-Time Event Tracking**: Live monitoring of simulated keystrokes and DOM interactions.
+- 🎨 **Multiple Scenarios**: Highly detailed mockups of:
+  - Social Media Logins (`InstaConnect`)
+  - Email Services (`G-Mail Secure`)
+  - Financial Portals (`PaySafe Wallet`)
+- 🛡️ **Interactive Feedback**: Post-action educational overlays highlighting the "red flags" missed during the simulation.
+- 🚀 **Performant & Responsive**: Built with Vite, React 19, and Tailwind CSS. Ready for one-click deployment.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 🛠️ Tech Stack
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+- **Framework**: React (TypeScript)
+- **Styling**: Tailwind CSS v4
+- **Icons**: Lucide React
+- **Build Tool**: Vite
+- **Deployment Config**: Render Blueprint (`render.yaml`) included
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🚀 Running Locally
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+To run this project on your local machine, follow these steps:
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/your-username/phishing-simulator.git
+   cd phishing-simulator
+   ```
+
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
+
+3. **Start the development server**
+   ```bash
+   npm run dev
+   ```
+
+4. **Build for production**
+   ```bash
+   npm run build
+   ```
+
+## 🌐 Deployment
+
+This project is configured out-of-the-box for [Render.com](https://render.com/) static site hosting. The included `render.yaml` file allows for one-click blueprint deployments. 
+
+Because the app handles routing entirely on the client side, the Render configuration automatically handles redirecting all traffic back to `index.html`.
+
+## 🤝 Contributing
+
+Contributions are welcome! If you have ideas for new simulation templates or enhanced educational breakdowns, feel free to open an issue or submit a pull request.
+
+---
+*Stay vigilant. Stay secure.*
