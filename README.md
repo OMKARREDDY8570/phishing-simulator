@@ -5,7 +5,7 @@
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.x-blue.svg?style=for-the-badge&logo=typescript)](https://www.typescriptlang.org/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind-4.2-38B2AC.svg?style=for-the-badge&logo=tailwind-css)](https://tailwindcss.com/)
 
-**Live Project Output:** [https://phishing-simulator-hw4o.onrender.com/](https://phishing-simulator-hw4o.onrender.com/)
+**Live Project Output:** [Goto Live simulator](https://phishing-simulator-getb.onrender.com/)
 
 ## 📖 Overview
 
